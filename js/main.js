@@ -9,7 +9,7 @@ var cObj;
 var fObj;
 
 // GET THE CONDITIONS
-weatherConditions.open('GET', 'http://api.openweathermap.org/data/2.5/weather?q=Dublin,ie&appid=' + mykey + '&units=metric', true);
+weatherConditions.open('GET', 'http://api.openweathermap.org/data/2.5/weather?lat=53.339304&lon=-6.319721&appid=' + mykey + '&units=metric', true);
 weatherConditions.responseType = 'text';
 weatherConditions.send(null);
 
@@ -35,7 +35,7 @@ weatherConditions.onload = function() {
 
 
 // GET THE FORECARST
-weatherForecast.open('GET','http://api.openweathermap.org/data/2.5/forecast?q=Dublin,ie&appid=' + mykey + '&units=metric', true);
+weatherForecast.open('GET','http://api.openweathermap.org/data/2.5/forecast?lat=53.339304&lon=-6.319721&appid=' + mykey + '&units=metric', true);
 weatherForecast.responseType = 'text'; 
 weatherForecast.send();
 
