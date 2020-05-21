@@ -50,8 +50,8 @@ if (weatherForecast.status === 200){
     var iconcode =  fObj.list[0].weather[0].icon;
     var icon_path = "http://openweathermap.org/img/w/"+iconcode+".png";
     document.getElementById('r1c2').src = icon_path;
-    document.getElementById('r1c3').innerHTML = fObj.list[0].main.temp_min+"&deg;";
     document.getElementById('r1c4').innerHTML = fObj.list[0].main.temp_max+"&deg;";
+   
 
 
 
@@ -62,8 +62,8 @@ if (weatherForecast.status === 200){
     var iconcode =  fObj.list[8].weather[0].icon;
     var icon_path = "http://openweathermap.org/img/w/"+iconcode+".png";
     document.getElementById('r2c2').src = icon_path;
-    document.getElementById('r2c3').innerHTML = fObj.list[8].main.temp_min+"&deg;";
     document.getElementById('r2c4').innerHTML = fObj.list[8].main.temp_max+"&deg;";
+  
 
 
 
@@ -73,8 +73,8 @@ if (weatherForecast.status === 200){
     var iconcode =  fObj.list[16].weather[0].icon;
     var icon_path = "http://openweathermap.org/img/w/"+iconcode+".png";
     document.getElementById('r3c2').src = icon_path;
-    document.getElementById('r3c3').innerHTML = fObj.list[16].main.temp_min+"&deg;";
     document.getElementById('r3c4').innerHTML = fObj.list[16].main.temp_max+"&deg;";
+   
    
 } //end if
 }; //end function
